@@ -18,7 +18,7 @@ public class OnGuildMemberJoin extends ListenerAdapter { //клас, що віт
 
     @Override //перевизначаємо метод батьківського класу
     public void onReady(ReadyEvent event) { //метод для виконання подій, коли бот готовий до роботи
-        Guild guild = event.getJDA().getGuildById("Here TOKEN for server where you want bot working"); //отримання об'єкту (сервер) за ідентифікатором
+        Guild guild = event.getJDA().getGuildById("Here ID for server where you want bot working"); //отримання об'єкту (сервер) за ідентифікатором
         //нашого сервера, на якому ми хочемо, щоб бот виконав дії
 
         if (guild != null) { //якщо об'єкт, в нашому випадку сервер за айдішником, знайдено, то
