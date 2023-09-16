@@ -12,7 +12,7 @@ import java.util.List;
 public class ChoiceRoleHandler extends ListenerAdapter {
     @Override
     public void onReady(ReadyEvent event) {
-        Guild guild = event.getJDA().getGuildById("1136734308657274960");
+        Guild guild = event.getJDA().getGuildById("Here TOKEN for server where you want bot working");
 
         if (guild != null) {
             List<Role> rolesOnServer = guild.getRoles();

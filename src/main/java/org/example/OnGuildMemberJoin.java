@@ -18,7 +18,7 @@ public class OnGuildMemberJoin extends ListenerAdapter { //клас, що віт
 
     @Override //перевизначаємо метод батьківського класу
     public void onReady(ReadyEvent event) { //метод для виконання подій, коли бот готовий до роботи
-        Guild guild = event.getJDA().getGuildById("1137351938703360111"); //отримання об'єкту (сервер) за ідентифікатором
+        Guild guild = event.getJDA().getGuildById("Here TOKEN for server where you want bot working"); //отримання об'єкту (сервер) за ідентифікатором
         //нашого сервера, на якому ми хочемо, щоб бот виконав дії
 
         if (guild != null) { //якщо об'єкт, в нашому випадку сервер за айдішником, знайдено, то
@@ -38,8 +38,8 @@ public class OnGuildMemberJoin extends ListenerAdapter { //клас, що віт
         StringBuilder rolesList = new StringBuilder();
         int roleCounter = 1;
         for (String roleName : availableRoles.keySet()) {
-            //пропускаємо ролі "@everyone", "bazatraineetestbot", "нова роль"
-            if (roleName.equals("@everyone") || roleName.equals("bazatraineetestbot") || roleName.equals("нова роль")) {
+            //пропускаємо ролі "@everyone", "mytestbot", "нова роль"
+            if (roleName.equals("@everyone") || roleName.equals("mytestbot") || roleName.equals("нова роль")) {
                 continue;
             }
 
