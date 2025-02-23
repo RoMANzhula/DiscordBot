@@ -1,5 +1,5 @@
 # DiscordBot
-Simple Discord Bot
+Simple Discord Bot.
 
 # Opportunities
 
